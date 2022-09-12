@@ -21,7 +21,8 @@ const Header: FunctionComponent = () => {
                 </div>
             </div>
             <div className="mobile-container">
-            <img className='reserve-button-mobile' src="https://delorean.com/wp-content/uploads/2022/03/Reserve-Explore@3x-1024x138.png" alt="" />
+                <div><img className='mobile-dmc-button' src="https://delorean.com/wp-content/uploads/2022/03/DMC-CLASSIC-LOGO-WHITE@2x.png" alt="" /></div>
+                <div><img className='reserve-button-mobile' src="https://delorean.com/wp-content/uploads/2022/03/Reserve-Explore@3x-1024x138.png" alt="" /></div>
             </div>
         </div>
     </>
