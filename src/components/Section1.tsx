@@ -50,7 +50,7 @@ const Section1 = () => {
                 <h2>THE FUTURE WAS NEVER PROMISED</h2>
             </div>
             <div className="alpha-logo"><img src="https://delorean.com/wp-content/uploads/2022/05/Asset-1@3x.png" alt="" /><br /></div>
-            <div className="reserve-img"><img src="https://delorean.com/wp-content/uploads/2022/09/Asset-28.png" alt="" /></div>
+            <div ><img className="reserve-img" src="https://delorean.com/wp-content/uploads/2022/09/Asset-28.png" alt="" /></div>
       </div>
     </div>
   )

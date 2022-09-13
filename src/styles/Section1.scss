@@ -48,7 +48,7 @@
         }
        
         .alpha-logo {
-            width: 25rem;
+            width: 30%;
             margin-bottom: 4rem;
             img {
                 width: 100%;
@@ -57,3 +57,64 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .section1 {
+        .bottom-div {
+            #animated-h2 {
+                display: none;
+            }
+            .reserve-img {
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .section1 {
+        .bottom-div {
+            .paragraph {
+                font-size: 2.1rem;
+            }
+        }
+        .alpha-logo {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .section1 {
+        .scroll-animation-container {
+            .scroll-animation {
+                display: none;
+            }
+        }
+        .bottom-div {
+            .paragraph {
+                font-size: 1.8rem;
+                width: 80%;
+            }
+            .alpha-logo {
+                width: 50%;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section1 {
+        .bottom-div {
+            .paragraph {
+                font-size: 1.3rem;
+                width: 90%;
+            }
+            .alpha-logo {
+                margin-bottom: 1rem;
+                width: 50%;
+            }
+        }
+
+    }
+}

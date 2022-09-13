@@ -1,0 +1,14 @@
+.section2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://delorean.com/wp-content/uploads/2022/05/DAL500012-BANNER2-2048x1153.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    .experience-btn {
+        height: 3rem;
+        margin-bottom: 2rem;
+    }
+}
