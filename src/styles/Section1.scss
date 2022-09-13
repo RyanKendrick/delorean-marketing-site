@@ -46,13 +46,15 @@
             opacity: 1;
             transform: translateY(0);
         }
-       
         .alpha-logo {
             width: 30%;
             margin-bottom: 4rem;
             img {
                 width: 100%;
             }
+        }
+        .reserve-img {
+            margin-bottom: 2rem;
         }
     }
 }
