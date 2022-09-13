@@ -1,0 +1,15 @@
+.scroll-animation-container {
+    height: 100%;
+    .scroll-animation {
+        display: flex;
+        align-items: center;
+        width: 500px;
+        transform: rotate(90deg);
+        color: white;
+        margin-left: -13em;
+        font-family: Arial, Helvetica, sans-serif;
+        .scroll-label {
+            margin-right: 13px;
+        }
+    }
+}
