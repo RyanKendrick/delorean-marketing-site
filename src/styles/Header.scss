@@ -1,10 +1,14 @@
+.header-container {
+    background-color: rgba(0, 0, 0, .5);
+}
+
 .header {
     width: 100%;
     height: 10vh;
-    background-color: rgba(0, 0, 0, .5);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: -1.5em;
     .left-div {
         width: 30%;
         display: flex;
@@ -52,14 +56,13 @@
 .sub-header {
     display: none;
     width: 100%;
-    height: 10vh;
-    background-color: rgba(0, 0, 0, .5);
+    height: 3vh;
     .dmc-button {
         height: 1em;
         display: none;
     }
     .reserve-button {
-        height: 15px;
+        height: 20px;
     }
 }
 
@@ -111,7 +114,7 @@
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
     .header {
         .center-div {
             display: none;
@@ -129,8 +132,19 @@
         display: flex;
         flex-direction: row;
         padding-left: 3em;
-        .dmc-button {
-            display: block;
+        .dmc-button-container {
+            width: 25%;
+            display: flex;
+            align-items: center;
+            .dmc-button {
+                display: block;
+                width: 60%;
+                height: auto;
+            }
+        }
+        .reserve-button-container {
+            display: flex;
+            align-items: center;
         }
     }
 }
