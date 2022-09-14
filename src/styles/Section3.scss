@@ -18,5 +18,18 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        .slider-legend {
+            margin-bottom: -25rem;
+            color: white;
+        }
+    }
+    .slide {
+        opacity: 0;
+        transform: ease 1s;
+    }
+    .slide.active {
+        opacity: 1;
+        transition-duration: 1s;
+        transform: scale(1);
     }
 }

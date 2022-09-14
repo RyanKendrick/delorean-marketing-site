@@ -10,9 +10,10 @@ function App() {
   const [images] = useState(imageList)
   const [currentImage, setCurrentImage] = useState(0)
   let length = images.length
+
  
-  const nextImage = () => {
-  
+  const nextImage = (e: any) => {
+    e.preventDefault()
     setCurrentImage(currentImage === length - 1 ? 0 : currentImage + 1)
  
   }
@@ -21,6 +22,15 @@ function App() {
     setCurrentImage(currentImage === 0 ? length - 1 : currentImage - 1)
   
   }
+
+  const legendSelect = (e: any) => {
+    let target = e.target.value;
+    
+    setCurrentImage(parseInt(target))
+    
+    console.log('target', parseInt(target))
+  }
+  console.log('currentImage', currentImage)
 
   return (
     <div>
@@ -32,6 +42,7 @@ function App() {
         nextImage={nextImage}
         prevImage={prevImage}
         imageList={images}
+        legendSelect={legendSelect}
       />
     </div>
   );
