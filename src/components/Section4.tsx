@@ -24,7 +24,7 @@ const Section4: React.FC<Section4Props> = ({ stats }) => {
                         ))}
                     </div>
                     <div className="spacer">*Images and videos shown contain pre-production vehicles — actual production vehicle performance may differ slightly. Some range and charge times are preliminary manufacturer estimates based on the EPA test cycle and are not official EPA values. All official EPA values are noted. Vehicle range varies with conditions including weather, driving behavior, vehicle condition and load, and battery age.</div>
-                    {/* <img className='bottom-img' src="https://delorean.com/wp-content/uploads/2022/05/DAL500017-BANNER5-2048x1153.webp" alt="" /> */}
+                    
                 </div>
                 
         </div>

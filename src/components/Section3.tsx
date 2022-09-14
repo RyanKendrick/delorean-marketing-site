@@ -28,7 +28,6 @@ const Section3: React.FC<Section3Props> =
             className='back-button'
             onClick={prevImage}
           />
-          {/* <button className='back-button' onClick={prevImage}>Back</button> */}
           <div className='slider-legend'>
             {imageList.map((i: any, index: any) => (
               <Radio 
@@ -47,7 +46,6 @@ const Section3: React.FC<Section3Props> =
               />
             ))}
           </div>  
-          {/* <button className='next-button' onClick={nextImage}>Next</button> */}
           <ArrowForwardIosIcon 
             className='next-button'
             onClick={nextImage}
