@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import Section1 from './components/Section1';
 import Section2 from './components/Section2';
@@ -12,15 +12,15 @@ function App() {
   let length = images.length
  
   const nextImage = () => {
+  
     setCurrentImage(currentImage === length - 1 ? 0 : currentImage + 1)
-    console.log(currentImage)
+ 
   }
 
   const prevImage = () => {
     setCurrentImage(currentImage === 0 ? length - 1 : currentImage - 1)
-    console.log(currentImage)
+  
   }
-
 
   return (
     <div>
@@ -28,7 +28,7 @@ function App() {
       <Section1 />
       <Section2 />
       <Section3 
-        // currentImage={images[currentImage]}
+        currentImage={currentImage}
         nextImage={nextImage}
         prevImage={prevImage}
         imageList={images}
