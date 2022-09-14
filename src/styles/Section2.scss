@@ -66,3 +66,48 @@
         }
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .section2 {
+        .bottom-div {
+            h2 {
+                letter-spacing: .5rem;
+            }
+            .section2-p {
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .section2 {
+        .bottom-div {
+            .section2-p {
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .section2 {
+        .bottom-div {
+            h2 {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section2 {
+        .bottom-div {
+            .model-logos {
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+            }
+        }
+    }
+}
