@@ -1,6 +1,19 @@
+
+
 .section3 {
     width: 100%;
-    img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .gallery-img {
+        width: 100%;
+    }
+    .buttons {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         width: 100%;
     }
 }

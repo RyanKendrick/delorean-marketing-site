@@ -2,9 +2,6 @@ import React from 'react'
 
 const Section2 = () => {
 
-
-
-
 const reveal = () => {
     let reveal = document.getElementById('animated-h2-s2') as HTMLElement
     let windowHeight = window.innerHeight;
