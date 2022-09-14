@@ -18,9 +18,22 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        color: white;
         .slider-legend {
-            margin-bottom: -25rem;
+            margin-bottom: -50%;
             color: white;
+        }
+        .back-button {
+            margin-left: 3rem;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .next-button {
+            margin-right: 3rem;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
     .slide {

@@ -4,6 +4,8 @@ import Section1 from './components/Section1';
 import Section2 from './components/Section2';
 import Section3 from './components/Section3';
 import imageList from './images/ImageList';
+import Section4 from './components/Section4';
+import stats from './components/Stats'
 
 function App() {
 
@@ -43,6 +45,9 @@ function App() {
         prevImage={prevImage}
         imageList={images}
         legendSelect={legendSelect}
+      />
+      <Section4 
+        stats={stats}
       />
     </div>
   );

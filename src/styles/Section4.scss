@@ -1,0 +1,73 @@
+
+
+.section4 {
+    display: flex;
+    justify-content: center;
+    background-image: url('https://delorean.com/wp-content/uploads/2022/05/DAL500020-8-2048x1655.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    .background-img {
+        width: 100%;
+   
+
+    }
+    .stats-container {
+        color: white;
+        height: auto;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        margin-top: 50%;
+        .stats-title-img {
+            width: 100%;
+        }
+        .stats-grid {
+            position: relative;
+            width: 100%;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            text-align: center;
+            column-gap: 2em;
+            .stat-title {
+                height: 2em;
+                border-bottom: solid 2px white;
+                // margin: 0 1em;
+                text-align: left;
+            }
+            .num-counter {
+                font-size: 5em;
+                font-weight: 400;
+            }
+        }
+        
+    }
+    .spacer {
+        background-color: #000000;
+        position: relative;
+        margin-top: 3rem;
+        text-align: center;
+        font-size: 12px;
+    }
+    .bottom-img {
+        margin-top: 100vh;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .section4 {
+        .stats-container {
+            .stats-grid {
+                .num-counter {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+
+
+}

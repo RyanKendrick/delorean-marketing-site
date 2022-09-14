@@ -1,5 +1,7 @@
 import React from 'react'
 import Radio from '@mui/material/Radio';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 interface Section3Props {
   imageList: any,
@@ -22,7 +24,11 @@ const Section3: React.FC<Section3Props> =
     <>
     <div className="section3">
         <div className="buttons">
-          <button className='back-button' onClick={prevImage}>Back</button>
+          <ArrowBackIosIcon 
+            className='back-button'
+            onClick={prevImage}
+          />
+          {/* <button className='back-button' onClick={prevImage}>Back</button> */}
           <div className='slider-legend'>
             {imageList.map((i: any, index: any) => (
               <Radio 
@@ -41,8 +47,11 @@ const Section3: React.FC<Section3Props> =
               />
             ))}
           </div>  
-          <button className='next-button' onClick={nextImage}>Next</button>
-          
+          {/* <button className='next-button' onClick={nextImage}>Next</button> */}
+          <ArrowForwardIosIcon 
+            className='next-button'
+            onClick={nextImage}
+          />
         </div>
         {imageList.map((slide: any, index: any) => 
           (
@@ -54,7 +63,6 @@ const Section3: React.FC<Section3Props> =
           )
         )}
     </div>
-    <div>asdfasdfasdf</div>
     </>
   )
 }
