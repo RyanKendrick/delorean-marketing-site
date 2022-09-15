@@ -14,10 +14,8 @@ import Footer from './components/Footer';
 
 // TODOS
 
-// 2. header border animation
 // 3. quotes animation
 // 4. quotes transitions
-// 5. header hover change
 // 6. responsive styles
 
 function App() {
