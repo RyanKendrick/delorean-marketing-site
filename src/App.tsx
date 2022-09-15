@@ -12,6 +12,14 @@ import Section6 from './components/Section6';
 import Section7 from './components/Section7';
 import Footer from './components/Footer';
 
+// TODOS
+
+// 2. header border animation
+// 3. quotes animation
+// 4. quotes transitions
+// 5. header hover change
+// 6. responsive styles
+
 function App() {
 
   const [images] = useState(imageList)
@@ -49,13 +57,35 @@ function App() {
     }
   }
 
+  let counters = document.querySelectorAll('.num-counter')
+  let speed = 200
+
+  const startCounter = () => {
+    counters.forEach((counter: any, index: any) => {        
+        const updateCount = () => {
+            let target = +counter.dataset.target
+            let count = +counter.innerText
+            let inc = target / speed
+            if (count < target) {
+                counter.innerText = (count + inc).toFixed(2)
+                setTimeout(updateCount, 1)
+            }
+    
+        }
+        updateCount()
+    })
+  }  
+
   // setInterval function is stopped when a component unmounts from the dom using clearInterval
   useEffect(() => {
+    startCounter()
     const timer =  setInterval(() => {
       updateQuote()
     }, 5000);
 
-    return () => clearInterval(timer)
+    return () => {
+      clearInterval(timer)
+    }
   })
 
   return (
@@ -79,7 +109,7 @@ function App() {
         quoteSelect={quoteSelect}
       />
       <Section6 />
-      <Section7 />
+      <Section7 />  
       <Footer />
     </div>
   );

@@ -35,12 +35,12 @@
             .stat-title {
                 height: 2em;
                 border-bottom: solid 2px white;
-                // margin: 0 1em;
                 text-align: left;
             }
             .num-counter {
                 font-size: 5em;
                 font-weight: 400;
+                white-space: pre-wrap;
             }
         }
         

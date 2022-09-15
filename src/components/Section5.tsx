@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 interface Section5Props {
     quotes: any,
@@ -7,6 +7,9 @@ interface Section5Props {
 }
 
 const Section5: React.FC<Section5Props> = ({ quotes, currentQuote, quoteSelect }) => {
+
+    
+
   return (
     <div className='section5'>
         <img className='top-img' src="https://delorean.com/wp-content/uploads/2022/05/DAL500017-BANNER5-2048x1153.webp" alt="" />

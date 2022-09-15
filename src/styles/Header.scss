@@ -2,6 +2,27 @@
     background-color: rgba(0, 0, 0, .5);
     height: 100px;
     position: fixed;
+    z-index: 1;
+    --border-size: 2px;
+    &:hover {
+        background-color: rgba(0, 0, 0, .75);
+    }
+    &:before {
+        content: '';
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: var(--border-size);
+        background-color: white;
+        position: absolute;
+        transition: transform 300ms ease-in-out;
+        transform: scaleX(0);
+    }
+    &:hover:before {
+        transform: scaleX(1)
+    }
+
+    
 }
 
 .header {
@@ -11,6 +32,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: -1.5em;
+    
     .left-div {
         width: 30%;
         display: flex;
