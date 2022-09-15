@@ -1,5 +1,4 @@
 import React from 'react'
-import Radio from '@mui/material/Radio';
 
 interface Section5Props {
     quotes: any,
@@ -15,30 +14,23 @@ const Section5: React.FC<Section5Props> = ({ quotes, currentQuote, quoteSelect }
             {quotes.map((i: any, index: any) => (
                 <div className={index === currentQuote ? 'slide active' : 'slide'} key={index}>
                     {index === currentQuote && (
-                        <div>
+                        <div key={index}>
                             <div>{i.quote}</div>
-                            <div>{i.author}</div>
-                            <div>{i.title}</div>
+                            <div className='author'>{i.author}</div>
+                            <div className='title'>{i.title}</div>
                         </div>
                     )}
                     
                 </div>
             ))}
         </div>
-        {quotes.map((i: any, index: any) => (
-            <Radio 
-            sx={{
-                color: 'white',
-                '&.Mui-checked': {
-                  color: 'white',
-                },
-              }}
-              checked={index === currentQuote}
-              key={index}
-              value={index}
-              onClick={quoteSelect}
-            />
-        ))}
+        
+        <div className="quotes-pagination">
+            {quotes.map((i: any, index: any) => (
+                <div onClick={quoteSelect} title={index} className={index === currentQuote ? 'bullet-active' : 'bullet'}>.</div>
+            ))}
+        </div>
+       
     </div>
   )
 }

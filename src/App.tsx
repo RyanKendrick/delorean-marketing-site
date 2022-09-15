@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Section1 from './components/Section1';
 import Section2 from './components/Section2';
@@ -8,6 +8,9 @@ import Section4 from './components/Section4';
 import stats from './components/Stats'
 import Section5 from './components/Section5';
 import quotes from './components/Quotes';
+import Section6 from './components/Section6';
+import Section7 from './components/Section7';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -15,7 +18,6 @@ function App() {
   const [currentImage, setCurrentImage] = useState(0)
   const [quoteList] = useState(quotes)
   const [currentQuote, setCurrentQuote] = useState(0)
-  let quoteLength = quoteList.length
   let length = images.length
 
   const nextImage = (e: any) => {
@@ -33,9 +35,28 @@ function App() {
   }
 
   const quoteSelect = (e: any) => {
-    let target = e.target.value;
-    setCurrentQuote(parseInt(target))
+    let target = e.target.title;
+    setCurrentQuote(parseInt(target))   
   }
+
+  const updateQuote = () => {
+    if (currentQuote === 3) {
+      setCurrentQuote(0)
+      console.log('currentQuote', currentQuote)
+    } else {
+      setCurrentQuote(currentQuote + 1)
+      console.log('currentQuote', currentQuote)
+    }
+  }
+
+  // setInterval function is stopped when a component unmounts from the dom using clearInterval
+  useEffect(() => {
+    const timer =  setInterval(() => {
+      updateQuote()
+    }, 5000);
+
+    return () => clearInterval(timer)
+  })
 
   return (
     <div>
@@ -57,6 +78,9 @@ function App() {
         currentQuote={currentQuote}
         quoteSelect={quoteSelect}
       />
+      <Section6 />
+      <Section7 />
+      <Footer />
     </div>
   );
 }

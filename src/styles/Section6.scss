@@ -1,0 +1,50 @@
+.section6 {
+    .top-img {
+        width: 100%;
+    }
+    .bottom-div {
+        // height: 50px;
+        width: 100%;
+        background-color: #040707;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 5rem;
+        .paragraph {
+            font-size: 2.5rem;
+            width: 66%;
+            font-weight: 300;
+        }
+        h2 {
+            font-size: 1.5rem;
+            letter-spacing: 1.5rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        .animated-h2-before {
+           position: relative;
+           transform: translateY(100px);
+           opacity: 0;
+           transition: ease 2s; 
+        }
+        .animated-h2-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .delo-logo {
+            width: 30%;
+            margin-bottom: 4rem;
+            margin-top: 4rem;
+            img {
+                width: 100%;
+            }
+        }
+        .reserve-img {
+            margin-bottom: 2rem;
+            height: 4rem;
+        }
+    }
+}
