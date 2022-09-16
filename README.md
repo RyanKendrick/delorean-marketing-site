@@ -6,8 +6,13 @@ npm install
 npm run dev
 ```
 
-<video src=""></video>
-<video src=""></video>
+<video>
+<source autoplay loop src="https://github.com/RyanKendrick/delorean-marketing-site/blob/main/public/video1.mp4">
+</video>
+
+<video>
+<source autoplay loop src="https://github.com/RyanKendrick/delorean-marketing-site/blob/main/public/video2.mp4">
+</video>
 
 
 
