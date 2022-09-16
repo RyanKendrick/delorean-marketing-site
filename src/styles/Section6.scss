@@ -48,3 +48,20 @@
         }
     }
 }
+
+@media screen and (max-width: 1025px) {
+    .section6 {
+        .bottom-div {
+            .paragraph {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+                letter-spacing: 8px;
+            }
+            .delo-logo {
+                width: 60%;
+            }
+        }
+    }
+}

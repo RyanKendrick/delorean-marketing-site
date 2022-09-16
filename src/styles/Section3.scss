@@ -21,6 +21,10 @@
         .slider-legend {
             margin-bottom: -50%;
             color: white;
+            display: flex;
+            width: 30%;
+            justify-content: center;
+            align-items: center;
         }
         .back-button {
             margin-left: 3rem;
@@ -45,3 +49,5 @@
         transform: scale(1);
     }
 }
+
+

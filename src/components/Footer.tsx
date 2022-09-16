@@ -34,12 +34,12 @@ const Footer = () => {
         </div>
         <div className="footer-bottom">
             <div className="left-div">
-                <div>PRIVACY<br/> POLICY</div>
-                <div>TERMS &<br/> CONDITIONS</div>
-                <div>COOKIE<br/> POLICY</div>
+                <div>PRIVACY POLICY</div>
+                <div>TERMS & CONDITIONS</div>
+                <div>COOKIE POLICY</div>
             </div>
             <div className="right-div">
-                <div>WEBSITE CREATED BY RYAN KENDRICK @RyanKendrick</div>
+                <div>© Lorem ipsum dolor sit amet consectetur</div>
             </div>
         </div>
         

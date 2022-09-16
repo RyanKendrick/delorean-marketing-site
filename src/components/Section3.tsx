@@ -30,20 +30,24 @@ const Section3: React.FC<Section3Props> =
           />
           <div className='slider-legend'>
             {imageList.map((i: any, index: any) => (
-              <Radio 
-                sx={{
-                  color: 'white',
-                  '&.Mui-checked': {
+              <div className="radio-button">
+                <Radio
+                  sx={{
                     color: 'white',
-                  },
-                }}
-                checked={index === currentImage}
-                key={index}
-                value={index}
-                name="radio-buttons"
-                inputProps={{ 'aria-label': 'A' }}
-                onClick={legendSelect}
-              />
+                    '&.Mui-checked': {
+                      color: 'white',
+      
+                    },
+                  }}
+                  checked={index === currentImage}
+                  key={index}
+                  size='small'
+                  value={index}
+                  name="radio-buttons"
+                  inputProps={{ 'aria-label': 'A' }}
+                  onClick={legendSelect}
+                />
+              </div>
             ))}
           </div>  
           <ArrowForwardIosIcon 

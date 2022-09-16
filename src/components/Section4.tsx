@@ -1,14 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
  
 interface Section4Props {
     stats: any,
 }
 
 const Section4: React.FC<Section4Props> = ({ stats }) => {
-  
-  
 
-   
   return (
     <>  
     <div className='section4'>

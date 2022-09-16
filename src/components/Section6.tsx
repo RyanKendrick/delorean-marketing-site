@@ -16,9 +16,7 @@ const Section6 = () => {
     
     
       }
-    
       window.addEventListener('scroll', reveal)
-
 
   return (
     <div className='section6'>
@@ -29,6 +27,7 @@ const Section6 = () => {
             We have a clear vision of our future,<br/>
             knowing it does not represent today.
         </div>
+
             <div id='animated-h2-6' className='animated-h2-before'>
                 <h2>HUMAN - CONNECTED - CREATIVE</h2>
             </div>
