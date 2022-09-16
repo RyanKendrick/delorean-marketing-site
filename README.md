@@ -1,4 +1,4 @@
-### Visit deployed app: [delorean-marketing-site.vercel.app](https://codepen-app.vercel.app/)
+### Visit deployed app: [delorean-marketing-site.vercel.app](https://delorean-marketing-site.vercel.app/)
 #### Run Locally
 
 ```
