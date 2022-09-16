@@ -6,9 +6,9 @@ npm install
 npm run dev
 ```
 
-<video alt="Video from Gyazo" width="1128" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/8fb9749542b8901cca69cf2c6ffcb5f9.mp4" type="video/mp4" /></video>
+[![Image from Gyazo](https://i.gyazo.com/8fb9749542b8901cca69cf2c6ffcb5f9.gif)](https://gyazo.com/8fb9749542b8901cca69cf2c6ffcb5f9)
 
-<video alt="Video from Gyazo" width="1130" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/ba9c49de424609cb959fd3f3fa9d7107.mp4" type="video/mp4" /></video>
+[![Image from Gyazo](https://i.gyazo.com/ba9c49de424609cb959fd3f3fa9d7107.gif)](https://gyazo.com/ba9c49de424609cb959fd3f3fa9d7107)
 
 
 
