@@ -28,7 +28,7 @@ window.addEventListener('scroll', reveal)
             <p className="section2-p">
             The DMC-12 was never meant to be a static interpretation of the brand, the brand would constantly evolve. Our icons are reimagined. DMC is and always was in constant evolution. An Icon is validated over time but to constantly reimagine mobility allows new icons to come into existence.
             </p>
-            <h2 id='animated-h2-s2' className='animated-h2-before'>REBELLIOUS - ICONIC - DESIGN</h2>
+            <h2 id='animated-h2-s2' className='animated-h2-before'>REBELLIOUS ICONIC DESIGN</h2>
             <div><img className='journey-img' src="https://delorean.com/wp-content/uploads/2022/05/Our-Journey@2x.png" alt="" /></div>
             <div className='model-logos'>
                 <div><img src="https://delorean.com/wp-content/uploads/2022/05/Asset-7@3x.webp" alt="" /></div>

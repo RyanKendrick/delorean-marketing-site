@@ -41,7 +41,7 @@
     }
     .quotes-pagination {
         display: flex;
-        width: 10%;
+        width: 25%;
         height: 1em;
         align-items: center;
         justify-content: space-between;
@@ -65,4 +65,12 @@
     }
 
     
+}
+
+@media screen and (max-width: 600px) {
+    .section5 {
+        .quotes {
+            height: 17rem;
+        }
+    }
 }
