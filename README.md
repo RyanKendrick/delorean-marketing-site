@@ -3,7 +3,7 @@
 
 ```
 npm install
-npm run dev
+npm start
 ```
 
 ![Image from Gyazo](https://github.com/RyanKendrick/delorean-marketing-site/blob/main/public/gif1.gif?raw=true)
