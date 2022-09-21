@@ -16,7 +16,7 @@ const Footer = () => {
         
         <div className="footer-top">
             <img className='footer-alpha-img' src="https://delorean.com/wp-content/uploads/2022/05/Asset-1@3x.png" alt="" />
-            <img className='signup-btn' src="https://delorean.com/wp-content/uploads/2022/05/Sign-Up@2x.png" alt="" />
+            <a href=""><img className='signup-btn' src="https://delorean.com/wp-content/uploads/2022/05/Sign-Up@2x.png" alt="" /></a>
             <div>FOLLOW US ON</div>
             <div className="social-icons">
             <i className="fa-brands fa-instagram"></i>
