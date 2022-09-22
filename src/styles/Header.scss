@@ -48,7 +48,10 @@
         align-items: center;
         justify-content: center;
         .reserve-button {
-            height: 35px;  
+            height: 35px;
+            &:hover {
+                cursor: pointer;
+            }  
         }
     }
     .right-div {

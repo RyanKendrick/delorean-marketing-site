@@ -9,7 +9,7 @@ const Header: FunctionComponent = () => {
                     <div><img className='header-logo' src="https://delorean.com/wp-content/uploads/2022/03/DeLorean-Logo-White-2048x75.webp" alt="" /></div>
                 </div>
                 <div className="center-div">
-                    <a href=""><img className='reserve-button' src="https://delorean.com/wp-content/uploads/2022/03/Reserve-Explore@3x-1024x138.png" alt="" /></a>
+                    <div><img className='reserve-button' src="https://delorean.com/wp-content/uploads/2022/03/Reserve-Explore@3x-1024x138.png" alt="" /></div>
                 </div>
                 <div className="right-div">
                     <div><img className='dmc-button' src="https://delorean.com/wp-content/uploads/2022/03/DMC-CLASSIC-LOGO-WHITE@2x.png" alt="" /></div>
